@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,81 @@
 	<!-- favicon icons  -->
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<title>Web-Expart</title>
-	<link rel="stylesheet" href="css/style.css"> 
+	<!-- font awesome Icon -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- font awesome icon  -->
-	<script src="https://kit.fontawesome.com/05bb888488.js" crossorigin="anonymous"></script>
+	<!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    /> -->
 </head>
+
 <body>
-	<header id="header">
-		<div class="section-center header-wrap">
-			<h3 class="navbar-name"><a href="#">Web-Expart</a></h3>
-			<nav>
+	<header id="home">
+		<!-- <div class="section-center header-wrap">
+			<div class="nav-headeer">
+				<h3 class="navbar-name"><a href="#">
+					<img src="img/logo.svg" alt="" srcset="">
+				</a></h3>
+				<p>
+					<button class="nav-toggle">
+						<i class="fas fa-bars" style="font-size: 2rem; color: black;"></i>
+					</button>
+				</p>
+			</div> -->
+		<!-- <nav>
 				<ul class="navbar-items">
 					<li class="navbar-item"><a href="" class="navbar-link">Home</a></li>
 					<li class="navbar-item"><a href="" class="navbar-link">Skills</a></li>
 					<li class="navbar-item"><a href="" class="navbar-link">About Us</a></li>
 					<li class="navbar-item"><a href="" class="navbar-link">Contact</a></li>
 				</ul>
-			</nav>
-		</div>
+			</nav> -->
+		<!-- </div> -->
+		<!-- navbar  -->
+		<nav class="navbar">
+			<div class="nav-center">
+				<div class="nav-header">
+					<!-- logo image  -->
+					<img src="img/logo.svg" alt="Code Addict" srcset="" class="nav-logo">
+					<!-- toggle button -->
+					<button class="nav-toggle" id="nav-toggle">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div>
+				<!-- end of the nav header section -->
+				<!-- this is the actual items sections  -->
+				<div class="nav-links" id="nav-links">
+					<a href="" class="nav-link active-home">Home</a>
+					<a href="" class="nav-link">Skills</a>
+					<a href="" class="nav-link">Projects</a>
+					<a href="" class="nav-link">Contact</a>
+					<a href="" class="nav-link">Others</a>
+				</div>
+			</div>
+			<!-- end of the section-center section -->
+		</nav>
+		<!-- end of the nav sections  -->
 	</header>
 	<!-- end of the header section -->
+
 	<main>
 		<div class="hero">
 			<div class="hero-banner">
-			  <h1 class="hero-title">continue exploring</h1>
-			  <p class="hero-text">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-				eveniet sit repudiandae.
-			  </p>
-			  <a href="#featured" class="btn-white scroll-link">explore more</a>
+				<h1 class="hero-title">continue exploring</h1>
+				<p class="hero-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+					eveniet sit repudiandae.
+				</p>
+				<a href="#featured" class="btn-white scroll-link">explore more</a>
 			</div>
-		  </div>
+		</div>
 	</main>
 	<!-- end of the main sections  -->
 	<!-- start of the skills section -->
 	<section class="skills-wrap section">
-		<h2 class="title">Our skills </h2> 
+		<h2 class="title">Our skills </h2>
 		<div class="section-center skillsbar-wrap">
 			<!-- single skill bar  -->
 			<div class="skill-container">
@@ -77,7 +118,7 @@
 			<!--end of the  single skill bar  -->
 		</div>
 	</section>
-	<!-- end of the skills section --> 
+	<!-- end of the skills section -->
 	<!-- start about us section -->
 	<section class="section about-us">
 		<h1 class="title">About us </h1>
@@ -88,7 +129,12 @@
 			<div class="about-info">
 				<h4 class="subtitle">Lorem, ipsum dolor.</h4>
 				<p class="about-info-p">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit tenetur quisquam, illo vero corrupti ipsa ex. Eligendi facere quia consequuntur ullam dignissimos expedita quibusdam voluptates dolor voluptas labore blanditiis nobis alias autem veritatis cumque illum, reprehenderit ipsam distinctio dicta minus explicabo sint aperiam nulla. Atque numquam libero, repudiandae saepe corporis blanditiis suscipit, quae reiciendis porro assumenda quas iste omnis quia iusto exercitationem harum.
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit tenetur quisquam, illo vero
+					corrupti ipsa ex. Eligendi facere quia consequuntur ullam dignissimos expedita quibusdam voluptates
+					dolor voluptas labore blanditiis nobis alias autem veritatis cumque illum, reprehenderit ipsam
+					distinctio dicta minus explicabo sint aperiam nulla. Atque numquam libero, repudiandae saepe
+					corporis blanditiis suscipit, quae reiciendis porro assumenda quas iste omnis quia iusto
+					exercitationem harum.
 				</p>
 				<button class="btn-primary">Read More</button>
 			</div>
@@ -104,8 +150,8 @@
 				<div class="persone">
 					<h4 class="persone-name"> Raton Roy </h4>
 					<div class=" persone-contact-info">
-						<h5 class="footer-p">Gmail:<span class="information">ratonroy18@gmail.com</span></h5> 
-						<h5 class="footer-p"> Contact:  <span class="information"> 01744457557</span></h5>
+						<h5 class="footer-p">Gmail:<span class="information">ratonroy18@gmail.com</span></h5>
+						<h5 class="footer-p"> Contact: <span class="information"> 01744457557</span></h5>
 					</div>
 				</div>
 				<!-- end of the single persone -->
@@ -113,10 +159,10 @@
 				<div class="persone">
 					<h4 class="persone-name"> BM Anik </h4>
 					<div class="persone-contact-info">
-						<h5 class="footer-p">Gmail:<span class="information">ruhulaminanik@gmail.com</span></h5> 
-						<h5 class="footer-p"> Contact:  <span class="information"> 01770749364</span></h5>
+						<h5 class="footer-p">Gmail:<span class="information">ruhulaminanik@gmail.com</span></h5>
+						<h5 class="footer-p"> Contact: <span class="information"> 01770749364</span></h5>
 					</div>
-<!-- 					<div class="social-icons">
+					<!-- <div class="social-icons">
 						<img src="img/facebook-brands.svg" alt="" srcset="" class="social-icons">
 					</div> -->
 				</div>
@@ -124,8 +170,13 @@
 			</div>
 		</div>
 	</footer>
+	<p>
+		<i class="fab fa-facebook" style="font-size: 4rem; color: red;"></i>
+	</p>
 	<div class="footer-end">
 		<h5>All Right Reserved By Us &#169 2022</h5>
 	</div>
+	<script src="js/all.min.js"></script>
 </body>
+
 </html>

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins&display=swap");
 /* css variables */
 :root {
-  --primaryColor: #03045e;
+  --primaryColor: #305ae4;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -11,7 +11,7 @@
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.25rem;
   --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
-  --darkShadow: 4px 10px 5px 0 rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0 rgba(0, 0, 0, 0.7);
 }
 /* reset */
 *,
@@ -119,47 +119,99 @@ a {
   margin: 0 auto;
   max-width: 1170px;
 }
-/*************** end of global styles **********************/
-/* header section */
-#header{
-	background-color: var(--primaryColor);
-	padding: 0.5rem 0;
+/************** styles to the navbar/header section ***************** */
+.navbar{
+  background-color: var(--mainWhite);
+  /* padding-bottom: 1rem; */
 }
-.navbar-name{
-	width: 40vw;
-	letter-spacing: var(--mainSpacing);
-
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
-.navbar-name a{
-	color: var(--mainWhite);
-}
-.header-wrap{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-nav{
-	width: 60vw;
-}
-.navbar-items{
-	display: flex;
-	justify-content: space-around;
-	color: var(--mainWhite);
-	align-items: center;
-	list-style-type: none;
-}
-.navbar-link{
-	color: var(--mainWhite);
+.nav-toggle{
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background: transparent; 
+  color: var(--primaryColor);
   transition: var(--mainTransition);
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
-.navbar-link:hover{
-  /* color: var(--offWhite); */
-  color:wheat;
+.nav-toggle:hover{
+  transform: scale(1.2);
 }
-/* end of header section */
+.nav-links{
+  padding: 0 2rem;
+}
+.nav-link{
+  color:var(--mainBlack);
+  transition: var(--mainTransition);
+  font-size: 1rem;
+  letter-spacing: var(--mainSpacing);
+  display: block;
+  padding: 0.5rem 0.3rem; 
+  font-weight: bold;
+}
+.nav-link:hover{
+ background-color: var(--darkGrey);
+ padding-left: 2rem;
+ color: var(--primaryColor);
+}
+/* ***********For Responsive Navbar *****************/
+@media screen and (min-width:992px) {
+  .nav-toggle {
+    display: none;
+  }
+  .active-home{
+    color: var(--darkGrey);
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-link {
+    padding: 0;
+  }
+  .nav-link:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .navbar {
+    padding: 0.6rem 2rem;
+  }
+  .nav-center {
+    width: 100%;
+  }
+  .nav-link {
+    margin-right: 1rem;
+  }
+}
+/* ***********End of Responsive Navbar ***********/
+/*************** end of Navbar section ******************/
 /* start of main sections  */
 /*************** hero **********************/
 .hero {
