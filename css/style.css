@@ -57,7 +57,8 @@ h3 {
 }
 h4 {
   font-size: 1.2rem;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  letter-spacing: 0.13rem;
 }
 p {
   margin-bottom: 1.25rem;
@@ -98,7 +99,7 @@ a {
 }
 /* section */
 .section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 /* title */
 .title-wrapper {
@@ -345,48 +346,38 @@ h4{
     box-shadow: var(--darkShadow);
   }
 }
-
-
 /*********************** end of about section *********************************/
 /* start of the footer section  */
 footer{
-  background-color:#222;
+  background-color:rgb(20, 17, 29);
 }
 .contact-title{
   color: white;
   font-weight: bold;
 }
-.footer-wrapper{
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-}
-.persone{
-  width: 45%;
-  color: #fff;
-}
-.persone-name{
-  color: white;
+.footer-container{
+  margin-top: 2rem;
   text-align: center;
-  letter-spacing: 2px;
+  color: whitesmoke;
 }
-.persone-contact-info{
-  text-align: center;
+.social-icon{
+  color: var(--mainWhite);
+  font-size: 2rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  transition: var(--mainTransition);
 }
-.footer-p{
-  margin-bottom: 0.5rem;
+.social-icon:hover{
+  transform: scale(1.2);
 }
-.information{
-  margin-left: 0.5rem;
+/* ********************************responsive footer**************** */
+@media screen and (min-width: 768px) {
+  .footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
 }
-/* .social-icons{
-  color: #2196F3;
-  background-color: #2196F3;
-  font-size: 1rem;
-  width: 50px;
-  height: 50px;
-  color: red;
-} */
+
 .footer-end{
   background-color: black;
   text-align: center;
