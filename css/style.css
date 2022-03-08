@@ -120,6 +120,9 @@ a {
   max-width: 1170px;
 }
 /************** styles to the navbar/header section ***************** */
+.nav-logo{
+  cursor: pointer;
+}
 .navbar{
   background-color: var(--mainWhite);
   /* padding-bottom: 1rem; */
@@ -159,13 +162,22 @@ a {
  padding-left: 2rem;
  color: var(--primaryColor);
 }
+/* nav-links height 191.95px  */
+.nav-links{
+  height: 0;
+  overflow: hidden; 
+  transition: var(--mainTransition);
+}
+.show-links{
+  height: 191.95px;
+}
 /* ***********For Responsive Navbar *****************/
 @media screen and (min-width:992px) {
   .nav-toggle {
     display: none;
   }
   .active-home{
-    color: var(--darkGrey);
+    color: var(--primaryColor);
     font-size: 1.2rem;
   }
   .nav-links {
@@ -203,19 +215,26 @@ a {
   .navbar {
     padding: 0.6rem 2rem;
   }
-  .nav-center {
-    width: 100%;
-  }
   .nav-link {
     margin-right: 1rem;
   }
 }
 /* ***********End of Responsive Navbar ***********/
+/* ***************fixed navbar section */
+.fixed{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: var(--mainTransition);
+  box-shadow:var(--darkShadow);
+  background-color: var(--offWhite);
+}
 /*************** end of Navbar section ******************/
 /* start of main sections  */
 /*************** hero **********************/
 .hero {
-  min-height: calc(100vh - 62px);
+  min-height: calc(100vh - 66px);
   background: var(--primaryColor);
   display: -webkit-box;
   display: -ms-flexbox;
