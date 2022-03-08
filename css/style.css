@@ -261,26 +261,19 @@ a {
 .hero-text {
   width: 85%;
   margin: 0 auto;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 0.12rem;
   font-weight: 400;
   margin-bottom: 2rem;
-  color: black;
+  color: var(--mainWhite); 
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .hero {
-     background: /* -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(230, 237, 238, 0.418)),
-        to(rgba(112, 96, 96, 0.411))
-      ), */
-      url("../img/group-img.jpg") center/cover no-repeat fixed;
-    background: linear-gradient(rgba(63, 207, 212, 0.384), rgba(114, 109, 109, 0.336)),
-      url("../img/group-img.jpg") center/cover no-repeat fixed;
+    background: linear-gradient(rgba(36, 37, 37, 0.5), rgba(48, 45, 45, 0.493)),
+      url("../img/okgroup.jpg") left top/cover no-repeat fixed;
   }
   .hero-title {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
   .hero-text {
     width: 70%;
