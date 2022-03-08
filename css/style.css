@@ -227,8 +227,9 @@ a {
   top: 0;
   width: 100%;
   transition: var(--mainTransition);
-  box-shadow:var(--darkShadow);
+  box-shadow: var(--lightShadow);
   background-color: var(--offWhite);
+  z-index: 1;
 }
 /*************** end of Navbar section ******************/
 /* start of main sections  */
@@ -309,26 +310,44 @@ h4{
 .node {width: 60%; background-color: #808080;}
 .react {width: 40%; background-color: #dbad57;}
 /* end of the skills section  */
-/* start of about section */
+/*******************about section ********************/
 .about-us{
   background-color: white;
 }
-.about-us-container{
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding-top: 2rem;
+.card-wrapper{
+  
 }
-.about-us-image{
-  width: 45%;
+.card-container{
+  box-shadow: var(--lightShadow); 
+  text-align: center; 
+  padding: 1.2rem 1.5rem; 
+  border-radius: 1.5rem; 
+  margin-top: 2rem;
 }
-.about-info{
-  width: 45%;
+.card-info{
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-family:monospace;
 }
-.about-info-p{
-  text-align: justify;
+/* ****************Responsive about us section******************** */
+@media screen and (min-width:768px) {
+  .card-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-container{
+    width: 45%;
+    transition: var(--mainTransition);
+  }
+  .card-container:hover{
+    transform: scale(1.1);
+    box-shadow: var(--darkShadow);
+  }
 }
-/* end of  about section */
+
+
+/*********************** end of about section *********************************/
 /* start of the footer section  */
 footer{
   background-color:#222;
