@@ -315,8 +315,11 @@ h4{
 .about-us{
   background-color: white;
 }
-.card-wrapper{
-  
+
+.card-title{
+  color: var(--mainBlack);
+  font-size: 1.5rem; 
+  margin-top: 1rem;
 }
 .card-container{
   box-shadow: var(--lightShadow); 
@@ -330,6 +333,11 @@ h4{
   letter-spacing: 1px;
   font-size: 1rem;
   font-family:monospace;
+  text-align: justify;
+}
+.card-btn{
+  text-align: start;
+  display: block;
 }
 /* ****************Responsive about us section******************** */
 @media screen and (min-width:768px) {
@@ -342,7 +350,7 @@ h4{
     transition: var(--mainTransition);
   }
   .card-container:hover{
-    transform: scale(1.1);
+    transform: scaleY(1.1);
     box-shadow: var(--darkShadow);
   }
 }
@@ -383,5 +391,9 @@ footer{
   text-align: center;
   color: white;
   padding: 1rem;
+}
+.footer-border{
+  border-right: 1px solid var(--offWhite);
+  margin: 1rem 0;
 }
 /* end  of the footer section  */
