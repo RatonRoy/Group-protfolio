@@ -144,7 +144,7 @@ a {
   cursor: pointer;
 }
 .nav-toggle:hover{
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 .nav-links{
   padding: 0 2rem;
@@ -163,7 +163,7 @@ a {
  padding-left: 2rem;
  color: var(--primaryColor);
 }
-/* nav-links height 191.95px  */
+/* nav-links height 191.95px  without nav-header */
 .nav-links{
   height: 0;
   overflow: hidden; 
@@ -177,7 +177,7 @@ a {
   .nav-toggle {
     display: none;
   }
-  .active-home{
+  .active{
     color: var(--primaryColor);
     font-size: 1.2rem;
   }
