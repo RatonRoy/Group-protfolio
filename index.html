@@ -21,7 +21,7 @@
 			<div class="nav-center">
 				<div class="nav-header">
 					<!-- logo image  -->
-					<img src="img/logo.svg" alt="Code Addict" srcset="" class="nav-logo" id="home">
+					<img src="img/logo.svg" alt="Code Addict" srcset="" class="nav-logo scroll-link" id="home" href="#home">
 					<!-- toggle button -->
 					<button class="nav-toggle" id="nav-toggle">
 						<i class="fas fa-bars"></i>
@@ -30,12 +30,12 @@
 				<!-- end of the nav header section -->
 				<!-- this is the actual items sections  -->
 				<div class="nav-links" id="nav-links">
-					<a href="#home" class="nav-link active-home">Home</a>
-					<a href="#projects" class="nav-link">Projects</a>
-					<a href="#skills" class="nav-link">Skills</a>
-					<a href="#about-us" class="nav-link">About Us</a>
-					<a href="#contact" class="nav-link">Contact</a>
-					<a href="#others" class="nav-link">Others</a>
+					<a href="#home" class="nav-link active-home scroll-link">Home</a>
+					<a href="#projects" class="nav-link scroll-link">Projects</a>
+					<a href="#skills" class="nav-link scroll-link">Skills</a>
+					<a href="#about-us" class="nav-link scroll-link">About Us</a>
+					<a href="#contact" class="nav-link scroll-link">Contact</a>
+					<a href="#others" class="nav-link scroll-link">Others</a>
 				</div>
 			</div>
 			<!-- end of the section-center section -->
@@ -51,7 +51,7 @@
 				<p class="hero-text">
 					Relentless, efficient, dedicated, positive and customer friendly service does exist. And it's definitely here.
 				</p>
-				<a href="#featured" class="btn-white scroll-link">explore more</a>
+				<a href="#featured" class="btn-white scroll-link scroll-link">explore more</a>
 			</div>
 		</div>
 	</main>
@@ -136,42 +136,44 @@
 	</section>
 	<!-- end of  about us section -->
 	<!--start of the  footer section -->
-	<footer class="section" id="contact">
-		<h1 class="title contact-title">Contact</h1>
-		<div class="section-center footer-wrapper">
-			<!--single persone information   -->
-			<article class="footer-container">
-				<h4 class="persone-name">Raton Chandro Roy</h4>
-				<div class="contact-information">
-					<h4>Gmail : ratonroy18@gmail.com</h4>
-					<h4>Contact Number : 01744457557</h4>
-				</div>
-				<div class="social-icons">
-					<a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a>
-					<a href=""> <i class="fa-solid fa-square-envelope social-icon"></i></a>
-				</div>
-			</article>
-			<!-- end of the single persone information   -->
-			<div class="footer-border"></div>
-			<!--single persone information   -->
-			<article class="footer-container">
-				<h4 class="persone-name">BM Ruhul Amin Anik</h4>
-				<div class="contact-information">
-					<h4>Gmail : ruhulaminanik@gmail.com</h4>
-					<h4>Contact Number : 01770749364</h4>
-				</div>
-				<div class="social-icons">
-					<a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a>
-					<a href=""> <i class="fa-solid fa-square-envelope social-icon"></i></a>
-				</div>
-			</article>
-			<!-- end of the single persone information   -->
+	<div class="footer-wrape">
+		<footer class="section" id="contact">
+			<h1 class="title contact-title">Contact</h1>
+			<div class="section-center footer-wrapper">
+				<!--single persone information   -->
+				<article class="footer-container">
+					<h4 class="persone-name">Raton Chandro Roy</h4>
+					<div class="contact-information">
+						<h4>Gmail : ratonroy18@gmail.com</h4>
+						<h4>Contact Number : 01744457557</h4>
+					</div>
+					<div class="social-icons">
+						<a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
+						<a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a>
+						<a href=""> <i class="fa-solid fa-square-envelope social-icon"></i></a>
+					</div>
+				</article>
+				<!-- end of the single persone information   -->
+				<div class="footer-border"></div>
+				<!--single persone information   -->
+				<article class="footer-container">
+					<h4 class="persone-name">BM Ruhul Amin Anik</h4>
+					<div class="contact-information">
+						<h4>Gmail : ruhulaminanik@gmail.com</h4>
+						<h4>Contact Number : 01770749364</h4>
+					</div>
+					<div class="social-icons">
+						<a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
+						<a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a>
+						<a href=""> <i class="fa-solid fa-square-envelope social-icon"></i></a>
+					</div>
+				</article>
+				<!-- end of the single persone information   -->
+			</div>
+		</footer>
+		<div class="footer-end">
+			<h5>All Right Reserved By Us &#169 <span id="date"></span></h5>
 		</div>
-	</footer>
-	<div class="footer-end">
-		<h5>All Right Reserved By Us &#169 <span id="date"></span></h5>
 	</div>
 	<script src="js/all.min.js"></script>
 	<script src="js/app.js"></script>

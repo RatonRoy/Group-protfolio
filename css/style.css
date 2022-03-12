@@ -349,6 +349,9 @@ h4{
 }
 /*********************** end of about section *********************************/
 /* start of the footer section  */
+.footer-wrape{
+  /* min-height: 100vh; */
+}
 footer{
   background-color:rgb(20, 17, 29);
 }
