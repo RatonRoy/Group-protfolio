@@ -270,7 +270,7 @@ a {
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgba(36, 37, 37, 0.5), rgba(48, 45, 45, 0.493)),
-      url("../img/okgroup.jpg") left top/cover no-repeat fixed;
+      url("../img/okgroup.jpg") center center/cover no-repeat fixed;
   }
   .hero-title {
     font-size: 2.5rem;

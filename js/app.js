@@ -38,7 +38,7 @@ scrollLinks.forEach((link) => {
 				position = idElement.offsetTop - 66;
 			}
 			else {
-				position = idElement.offsetTop - 66 - 191;
+				position = idElement.offsetTop  - 191;
 			}
 		}
 		window.scrollTo({
