@@ -304,6 +304,36 @@ h4{
 .node {width: 60%; background-color: #808080;}
 .react {width: 40%; background-color: #dbad57;}
 /* end of the skills section  */
+/* *****************start of the project section************************ */
+.projects-container{
+  background-color: #e5ebf1;
+}
+.project-single{
+  padding: 1rem;
+  border: 1px solid #021c31;
+  width: 450px;
+  height: 510px;  
+  margin-top: 1rem; 
+  border-radius: 0.3rem;
+}
+.project-title{
+  text-transform: capitalize;
+  text-align: center; 
+  letter-spacing: 0.12rem;
+}
+.project-btn{
+  background-color: #1c4be6; 
+  color: white;
+  font-size: 1rem;
+  text-align: center; 
+  padding: 0.7rem 2rem; 
+  border: none;
+  border-radius: 0.4rem;
+  letter-spacing: 0.12rem; 
+  text-align: center;
+  cursor: pointer;
+}
+/* *****************End of the project section************************ */
 /*******************about section ********************/
 .about-us{
   background-color: white;
