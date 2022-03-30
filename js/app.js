@@ -4,7 +4,7 @@ document.getElementById('nav-toggle').addEventListener('click', function () {
 	// show-links is a class that define in the css files there remains the nav-links height without nav header div 
 	navLinks.classList.toggle("show-links");
 })
-// for daynamic date 
+// for dynamic date 
 document.getElementById('date').innerHTML = new Date().getFullYear();
 // position fixed navbar 
 const navBar = document.querySelector('.navbar');
@@ -39,7 +39,7 @@ scrollLinks.forEach((link) => {
 			position = idElement.offsetTop - 66;
 		 }
 		else {
-			// here 132 is the height of the normal navbar and fixed navbar height 
+			// here 132 is the height of the normal navbar with fixed navbar height 
 			position = idElement.offsetTop - 132;
 		}
 		// for responsive design js code manner 
